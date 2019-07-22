@@ -176,6 +176,10 @@ func (r *BIG) xortop(x Chunk) {
 	r.w[NLEN-1] ^= x
 }
 
+func (r *BIG) Norm() Chunk {
+	return r.norm()
+}
+
 /* normalise BIG - force all digits < 2^BASEBITS */
 func (r *BIG) norm() Chunk {
 	carry := Chunk(0)
