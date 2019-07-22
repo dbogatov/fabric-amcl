@@ -259,6 +259,10 @@ func (r *BIG) iszilch() bool {
 	return true
 }
 
+func (r *BIG) Zero() {
+	return r.zero()
+}
+
 /* set to zero */
 func (r *BIG) zero() {
 	for i := 0; i < NLEN; i++ {
