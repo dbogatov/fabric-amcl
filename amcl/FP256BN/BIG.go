@@ -552,7 +552,7 @@ func smul(a *BIG, b *BIG) *BIG {
 }
 
 func Comp(a *BIG, b *BIG) int {
-	return Comp(a, b)
+	return comp(a, b)
 }
 
 /* Compare a and b, return 0 if a==b, -1 if a<b, +1 if a>b. Inputs must be normalised */
