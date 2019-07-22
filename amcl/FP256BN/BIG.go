@@ -354,6 +354,10 @@ func (r *BIG) nbits() int {
 	return bts
 }
 
+func (r *BIG) ToString() string {
+	return r.toString()
+}
+
 /* Convert to Hex String */
 func (r *BIG) toString() string {
 	s:=""
@@ -522,7 +526,9 @@ func smul(a *BIG,b *BIG) *BIG {
 	return c;
 }
 
-
+func Comp(a *BIG,b *BIG) int {
+	return Comp(a, b)
+}
 
 /* Compare a and b, return 0 if a==b, -1 if a<b, +1 if a>b. Inputs must be normalised */
 func comp(a *BIG,b *BIG) int {
