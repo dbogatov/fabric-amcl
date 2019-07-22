@@ -260,7 +260,7 @@ func (r *BIG) iszilch() bool {
 }
 
 func (r *BIG) Zero() {
-	return r.zero()
+	r.zero()
 }
 
 /* set to zero */
