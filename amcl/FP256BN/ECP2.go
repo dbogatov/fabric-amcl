@@ -60,6 +60,10 @@ func (E *ECP2) inf() {
 	E.z.zero()
 }
 
+func (E *ECP2) Neg() {
+	E.neg()
+}
+
 /* set this=-this */
 func (E *ECP2) neg() {
 //	if E.Is_infinity() {return}

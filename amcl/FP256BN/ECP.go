@@ -173,6 +173,10 @@ func (E *ECP) Copy(P *ECP) {
 //	E.INF=P.INF;
 }
 
+func (E *ECP) Neg() {
+	E.neg()
+}
+
 /* this=-this */
 func (E *ECP) neg() {
 //	if E.Is_infinity() {return}
